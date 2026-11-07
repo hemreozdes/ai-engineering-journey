@@ -1,0 +1,16 @@
+# --- Gizli bilgiler: ASLA commit'lenmez ---
+.env
+
+# --- Python sanal ortamı: herkes kendi makinesinde kurar ---
+.venv/
+
+# --- Python'un ürettiği derlenmiş dosyalar ---
+__pycache__/
+*.pyc
+
+# --- API cevap logları: içerik ve maliyet bilgisi barındırır ---
+**/logs/
+
+# --- Editör / işletim sistemi dosyaları ---
+.vscode/
+.DS_Store
