@@ -1,0 +1,6 @@
+Gemini · 3.5-flash-lite hiç düşünmüyor. Gecikmesi düşük, ama zor sorularda kalitesi düşebilir.
+Groq hem düşünüp hem de en hızlı cevap veren model oldu. Groq’un kendi donanımında çalışmasının farkı burada görülüyor.
+Gemini system prompt’taki “örnekli olsun” talimatına uydu, Groq uymadı. Hız ve talimata uyum ayrı eksenler.
+Model Gemini’nin cevabında iki sorun var. Bunları yakalaman önemli:
+“Sistem sana kullanıcının ... şifresini verir”: Düzgün tasarlanmış bir REST API şifreyi asla döndürmez. Senin Spring Boot’ta DTO kullanmanın sebeplerinden biri tam olarak bu. Örnek akıcı ama teknik olarak hatalı.
+“GraphQL’de versiyonlamaya gerek kalmaz”: Abartılı bir iddia. Alan silmek ya da tipini değiştirmek GraphQL’de de mevcut istemcileri bozar. Doğrusu “daha az ihtiyaç duyulur” olurdu.

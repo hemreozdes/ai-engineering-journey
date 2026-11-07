@@ -2,6 +2,8 @@
 Gemini adapter'ı: Ortak arayüzü Google Gen AI SDK'sının diline çevirir.
 google.genai SADECE bu dosyada import edilir.
 """
+# TODO: Google, generate_content yerine Interactions API'yi öneriyor (Kasım 2026).
+#       Kullanımdan kaldırılırsa yalnızca _send() metodu güncellenecek.
 
 import os
 

@@ -25,4 +25,8 @@ def create_client(provider: str | None = None, model: str | None = None) -> LLMC
         from .gemini_client import GeminiClient
         return GeminiClient(model=model or _require_env("GEMINI_MODEL"))
 
+    if provider == "groq":
+        # Lazy import: groq paketi yalnızca Groq seçilirse yüklenir.
+        from .groq_client import GroqClient
+        return GroqClient(model=model or _require_env("GROQ_MODEL"))
     raise ValueError(f"Desteklenmeyen sağlayıcı: '{provider}'")
